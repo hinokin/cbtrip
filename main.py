@@ -51,13 +51,13 @@ def worker(q):
         t = make_trip(key)
 
         if t in TARGETS:
-            msg = f"🌈【100点：本命！】\nキー: #{key}\nトリップ: ◆{t}"
+            msg = f"🌈【gh100点：本命！】\nキー: #{key}\nトリップ: ◆{t}"
             send_discord(msg)
         elif t.startswith(GREAT_PREFIX):
-            msg = f"💎【90点：ほぼ本命！】\nキー: #{key}\nトリップ: ◆{t}"
+            msg = f"💎【gh90点：ほぼ本命！】\nキー: #{key}\nトリップ: ◆{t}"
             send_discord(msg)
         elif t.startswith(GOOD_PREFIX):
-            msg = f"✨【70点：テスト用】 #{key} -> ◆{t}"
+            msg = f"💫【70点：ghテスト用】 #{key} -> ◆{t}"
             send_discord(msg)
 
         local_count += 1
